@@ -1,0 +1,42 @@
+package hi;
+
+abstract class S{
+	abstract void area();
+}
+
+class rectangle extends S{
+	void area() {
+		int a=10;
+		int b=5;
+		System.out.println("Area of rectangle:"+2*(a+b));
+	}
+}
+
+class circle extends S{
+	void area() {
+		int r=5;
+		System.out.println("Area of circle:"+(3.14*r*r));
+	}
+}
+
+class triangle extends S{
+	void area() {
+		int b=5;
+		int h=3;
+		System.out.println("Area of triangle:"+(0.5*b*h));
+	}
+}
+class Shape{
+	public static void main(String[] args) {
+		// TODO Auto-generated method 
+		rectangle r=new rectangle();
+		r.area();
+		circle c=new circle();
+		c.area();
+		triangle t=new triangle();
+		t.area();
+		
+
+	}
+
+}

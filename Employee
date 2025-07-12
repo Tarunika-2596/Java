@@ -1,0 +1,75 @@
+package hi;
+import java.util.*;
+public class Employee {
+	private String name;
+	private int age;
+	private double salary;
+	int id;
+	public String getname() {
+		return name;
+	}
+	public int getage() {
+		return age;
+	}
+	public double getsalary() {
+		return salary;
+	}
+	public int getid() {
+		return id;
+	}
+	public void setname(String name) {
+		if(name!=null && !name.trim().isEmpty()) {
+			this.name=name;
+		}
+		else {
+			System.out.println("Invalid name");
+		}		
+	}	
+	public void setage(int age) {
+		if(age>0) {
+			this.age=age;
+		}
+		else {
+			System.out.println("Invalid age");
+		}
+	}	
+	public void setsalary(double salary) {
+		if(salary>0) {
+			this.salary=salary;
+		}
+		else {
+			System.out.println("Invalid salary type");
+		}
+	}
+	public void setid(int id) {
+			if(id>0) {
+				this.id=id;
+			}
+			else {
+				System.out.print("Invalid id");
+			}
+	}	
+	public Employee(String name,int id,int age,double salary){
+		this.name=name;
+		this.age=age;
+		this.salary=salary;
+		this.id=id;
+		System.out.println("Employee class created with name: "+getname()+" id:"+getid()+" age:"+getage()+" salary:"+getsalary());
+	} 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner=new Scanner(System.in);
+		System.out.print("Enter name:");
+		String Name= scanner.next();
+		System.out.print("Enter ID:");
+		int id=scanner.nextInt();
+		System.out.print("Enter age:");
+		int age=scanner.nextInt();
+		System.out.print("Enter salary:");
+		double salary=scanner.nextDouble();
+		//Employee obj=new Employee("Tarunika",1,18,1000000.0);
+		Employee emp= new Employee(Name,id,age,salary);
+
+	}
+
+}

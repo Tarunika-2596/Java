@@ -1,0 +1,24 @@
+package hi;
+class mul{
+	static void sum(int a,int b) {		//function overload
+		System.out.println(a+b);
+	}
+	static void sum(double a,double b) {	//function overload
+		System.out.println(a+b);
+	}
+	
+}
+
+public class Complie_time_polymorphism {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		mul m;
+		m= new mul();
+		m.sum(10,5);
+		m.sum(10.5,5.3);
+		
+		
+	}
+
+}

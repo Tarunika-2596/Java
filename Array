@@ -1,0 +1,36 @@
+package hi;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr=new int[5];
+		float[] farr=new float[5];
+		char[] carr=new char[5];
+		arr[0]=10;
+		arr[1]=20;
+		arr[2]=30;
+		
+		farr[0]=(float)1.0;
+		farr[1]=(float)2.0;
+		farr[2]=(float) 3.0;
+		
+		carr[0]='a';
+		carr[1]='b';
+		carr[2]='c';
+		System.out.println("Integer array");
+		for(int i=0;i<5;i++) {
+			System.out.println(arr[i]);
+		}
+		System.out.println("Float array");
+		for(int i=0;i<5;i++) {
+			System.out.println(farr[i]);
+		}
+		System.out.println("character array");
+		for(int i=0;i<5;i++) {
+			System.out.println(carr[i]);
+		}
+
+	}
+
+}
